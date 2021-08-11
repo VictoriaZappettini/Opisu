@@ -1,0 +1,150 @@
+{
+    "items": [
+        {
+            "type": "basemap",
+            "peso": 1,
+            "nombre": "Mapas base",
+            "short_abstract": "",
+            "class": "",
+            "seccion": "mapasbase",
+            "capas": [
+                {
+                                  "titulo": "ArgenMap Gris ",
+                    "nombre": "argenmapgris",
+                    "servicio": "tms",
+                    "version": "1.0.0",
+                    "attribution": "<a href = 'https://www.ign.gob.ar/AreaServicios/ArgenMap/IntroduccionV2' target='_blank'>Instituto Geografico Nacional</a> + <a href='http://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+                    "host": " https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A4326@png/{z}/{x}/{-y}.png",                     
+                    "legendImg": "img/argenmap-gris.png",
+                    "selected": true
+                    
+                },
+                {
+                    "titulo": "ArgenMap ",
+                    "nombre": "argenmap",
+                    "servicio": "tms",
+                    "version": "1.0.0",
+                    "attribution": "<a href = 'https://www.ign.gob.ar/AreaServicios/ArgenMap/IntroduccionV2' target='_blank'>Instituto Geografico Nacional</a> + <a href='http://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+                    "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",                     
+                    "legendImg": "img/argenmap.png",
+                    "selected": true
+                },
+                 {
+                    "titulo": "Imágenes satelitales",
+                    "nombre": "here_imagery",
+                    "servicio": "tms",
+                    "version": "1.0.0",
+                    "attribution": "Imágenes satelitales © here",
+                    "host": "https://2.aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/256/png8?app_id=XiMlA4JwMurUFFYUWYe3&app_code=oTsmqovbl2YudG3E0UlxDA",
+                    "legendImg": "img/here.png"
+      
+                }
+               
+
+            ]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 10,
+            "nombre": "Capas Opisu",
+            "short_abstract": "Organismo Provincial de Integración Social Y Urbana",
+            "class": "",
+            "seccion": "Opisu",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["Precios_entorno_Itati_2020","Coordinaciones_Territoriales_OPISU","Barrios_Intervencion_OPISU_JULIO_2021","40 AMBA - Deficit Urbano Habitacional",
+                                "Estimacion_Poblacional","Nisu"],
+            "customize_layers": {"Precios_entorno_Itati_2020":{"new_title": "Relevamiento mercado inmobiliario Itatí ","new_abstract": "Capa de generacion propia."},
+                                 "Coordinaciones_Territoriales_OPISU":{"new_title": "Coordinaciones Territoriales OPISU","new_abstract": "Capa de generacion propia."},
+                                 "Barrios_Intervencion_OPISU_JULIO_2021":{"new_title": "Barrios Intervencion OPISU (Julio 2021)","new_abstract": "Capa de generacion propia."},
+                                 "40 AMBA - Deficit Urbano Habitacional":{"new_title": "Deficit Urbano Habitacional","new_abstract": "Capa de generacion propia."},
+                                 "Estimacion_Poblacional":{"new_title": "Estimacion_Poblacional","new_abstract": "Capa de generacion propia."},
+                                 "Nisu":{"new_title": "NISU","new_abstract": "Capa de generacion propia."}
+            }
+        },
+            {
+            "type": "wmslayer",
+            "peso": 10,
+            "nombre": "UrbaSig",
+            "short_abstract": "Dirección Provincial de Ordenamiento Urbano y Territorial.Departamento urBAsig.",
+            "class": "",
+            "seccion": "UrbaSig",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["cuencas_g","etapas_del_proceso_de_planeamiento","macizos"],
+            "customize_layers":{"cuencas_g":{"new_title": "Cuencas ","new_abstract": "Capa de generacion propia."},
+                                 "etapas_del_proceso_de_planeamiento":{"new_title": "Etapas del proceso de planeamiento","new_abstract": "Capa de generacion propia."}
+                                ,"macizos":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."},"municipalidades":{"new_title": "Municipalidades","new_abstract": "Capa de generacion propia."},
+                                "partidos":{"new_title": "Partidos","new_abstract": "Capa de generacion propia."},
+                                "rpuc_1":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."},
+                                "rpuc_2":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."},
+                                "uc_arba":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."}
+            }
+        },
+         {
+            "type": "wmslayer",
+            "peso": 40,
+            "nombre": "IGN",
+            "short_abstract": " Instituto Geográfico Nacional ",
+            "class": "",
+            "seccion": "ign",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://wms.ign.gob.ar/geoserver/"
+        },
+        {
+            "type": "wmslayer",
+            "peso": 60,
+            "nombre": "INDEC",
+            "short_abstract": "Instituto Nacional de Estadística y Censos",
+            "class": "",
+            "seccion": "Indec",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoservicios.indec.gob.ar/geoserver",
+            "allowed_layers": ["sig:v_departamentos","sig:vias","sig:cuadras","sig:v_fracciones",
+            "geocenso2010:actividad_dpto","geocenso2010:hogares_con_desague_cloacal_pcia","geocenso2010:hogares_con_desague_cloacal_dpto",
+            "geocenso2010:v_inmat_x_prov"]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 30,
+            "nombre": "ARBA",
+            "short_abstract": "Catastro provincial",
+            "class": "",
+            "seccion": "Arba",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geo.arba.gov.ar/geoserver/idera",
+            "allowed_layers": ["Grupo IDERA"]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 50,
+            "nombre": "GeoInfra",
+            "short_abstract": "Sistema de Información Geográfico de Infraestructura de Obras y Servicios Públicos",
+            "class": "",
+            "seccion": "geoinfra",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://www.geoinfra.minfra.gba.gov.ar/geoserver/",
+            "allowed_layers": ["Geoinfra:acueductos"]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 70,
+            "nombre": "IdeHab",
+            "short_abstract": "Subsecretaría de Hábitat de la Comunidad",
+            "class": "",
+            "seccion": "idehab",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "http://181.171.117.68/geoserver/ows",
+            "allowed_layers": ["capabase","geonode:calles_lujan"]
+        }
+        
+    ],
+    "template": "ign-geoportal-basic"
+}
