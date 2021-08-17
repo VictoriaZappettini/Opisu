@@ -14,7 +14,7 @@
                     "servicio": "tms",
                     "version": "1.0.0",
                     "attribution": "<a href = 'https://www.ign.gob.ar/AreaServicios/ArgenMap/IntroduccionV2' target='_blank'>Instituto Geografico Nacional</a> + <a href='http://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
-                    "host": " https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A4326@png/{z}/{x}/{-y}.png",                     
+                    "host": " https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{z}/{x}/{-y}.png",                     
                     "legendImg": "img/argenmap-gris.png",
                     "selected": true
                     
