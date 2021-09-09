@@ -11,9 +11,9 @@ const LAYER = 'layer';
 const DEFAULT_MIN_ZOOM_LEVEL = 3;
 const DEFAULT_MAX_ZOOM_LEVEL = 21;
 
-const DEFAULT_ZOOM_LEVEL = 7;
-const DEFAULT_LATITUDE = -36;
-const DEFAULT_LONGITUDE = -57;
+const DEFAULT_ZOOM_LEVEL = 6;
+const DEFAULT_LATITUDE = -37.0296;
+const DEFAULT_LONGITUDE = -56.4609;
 const DEFAULT_BASE_LAYER = 'child-mapasbase0';
 
 class URLInteraction {
