@@ -123,28 +123,42 @@
         {
             "type": "wmslayer",
             "peso": 50,
-            "nombre": "GeoInfra",
-            "short_abstract": "Sistema de Información Geográfico de Infraestructura de Obras y Servicios Públicos",
+            "nombre": "RENABAP 2020 Prov.BsAs",
+            "short_abstract": "Registro Nacional de Barrios Populares",
             "class": "",
-            "seccion": "geoinfra",
+            "seccion": "renabap",
             "servicio": "wms",
             "version": "1.3.0",
-            "host": "https://www.geoinfra.minfra.gba.gov.ar/geoserver/",
-            "allowed_layers": ["Geoinfra:acueductos"]
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["Renabap_2018_base"],
+            "customize_layers":{"Renabap_2018_base":{"new_title": "Base Renabap"}}
         },
         {
             "type": "wmslayer",
             "peso": 70,
-            "nombre": "IdeHab",
-            "short_abstract": "Subsecretaría de Hábitat de la Comunidad",
+            "nombre": "Infraestructura Básica",
+            "short_abstract": "Capas de servicios básicos e infraestructura de fuentes secundarias",
             "class": "",
-            "seccion": "idehab",
+            "seccion": "infrabasica",
             "servicio": "wms",
             "version": "1.3.0",
-            "host": "http://181.171.117.68/geoserver/ows",
-            "allowed_layers": ["capabase","geonode:calles_lujan"]
+            "host": "",
+            "allowed_layers": []
+        },
+         {
+            "type": "wmslayer",
+            "peso": 70,
+            "nombre": "Datos Socioeconómicos",
+            "short_abstract":"Capas sobre distintos indicadores",
+            "class": "",
+            "seccion": "datosse",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "",
+            "allowed_layers": []
         }
         
     ],
     "template": "ign-geoportal-basic"
 }
+
