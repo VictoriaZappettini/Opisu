@@ -139,7 +139,7 @@
             "allowed_layers": ["cursos_de_agua","curvas_de_nivel_PBA","dist_at_mt","cuerpos_de_agua","lineas_alta_tension","lotes_con_servicios","edenor_subestacion_at","edenor_linea_at",
             "edenor_subestacion_mt","edelap_linea_at","edelap_subestacion_at","edelap_subestacion_mt","paradas_colectivo_RMBA","recorridos_lineas_provinciales",
             "red_agua_absa","red_cloaca_absa","red_de_agua","red_de_cloacas","red_de_gas"," terminales_y_paradores","rutas_nacionales","rutas_provinciales",
-            "prestadores_servicio_agua_cloacas","red_vial_secundaria","centrales_elec"]
+            "prestadores_servicio_agua_cloacas","red_vial_secundaria","centrales_elec","cuencas_hidricas"]
         },
          {
             "type": "wmslayer",
