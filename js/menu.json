@@ -66,22 +66,15 @@
             {
             "type": "wmslayer",
             "peso": 10,
-            "nombre": "UrbaSig",
-            "short_abstract": "Dirección Provincial de Ordenamiento Urbano y Territorial.Departamento urBAsig.",
+            "nombre": "Zonificación - Ley 8912",
             "class": "",
             "seccion": "UrbaSig",
             "servicio": "wms",
             "version": "1.3.0",
             "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
-            "allowed_layers": ["cuencas_g","etapas_del_proceso_de_planeamiento","macizos"],
-            "customize_layers":{"cuencas_g":{"new_title": "Cuencas ","new_abstract": "Capa de generacion propia."},
-                                 "etapas_del_proceso_de_planeamiento":{"new_title": "Etapas del proceso de planeamiento","new_abstract": "Capa de generacion propia."}
-                                ,"macizos":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."},"municipalidades":{"new_title": "Municipalidades","new_abstract": "Capa de generacion propia."},
-                                "partidos":{"new_title": "Partidos","new_abstract": "Capa de generacion propia."},
-                                "rpuc_1":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."},
-                                "rpuc_2":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."},
-                                "uc_arba":{"new_title": "Macizos","new_abstract": "Capa de generacion propia."}
-            }
+            "allowed_layers": [],
+            "customize_layers":{}
+            
         },
          {
             "type": "wmslayer",
@@ -97,7 +90,7 @@
         {
             "type": "wmslayer",
             "peso": 60,
-            "nombre": "INDEC",
+            "nombre": "Información Censal",
             "short_abstract": "Instituto Nacional de Estadística y Censos",
             "class": "",
             "seccion": "Indec",
@@ -142,8 +135,11 @@
             "seccion": "infrabasica",
             "servicio": "wms",
             "version": "1.3.0",
-            "host": "",
-            "allowed_layers": []
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["cursos_de_agua","curvas_de_nivel_PBA","dist_at_mt","cuerpos_de_agua","lineas_alta_tension","lotes_con_servicios","edenor_subestacion_at","edenor_linea_at",
+            "edenor_subestacion_mt","edelap_linea_at","edelap_subestacion_at","edelap_subestacion_mt","paradas_colectivo_RMBA","recorridos_lineas_provinciales",
+            "red_agua_absa","red_cloaca_absa","red_de_agua","red_de_cloacas","red_de_gas"," terminales_y_paradores","rutas_nacionales","rutas_provinciales",
+            "prestadores_servicio_agua_cloacas","red_vial_secundaria","centrales_elec"]
         },
          {
             "type": "wmslayer",
@@ -161,4 +157,3 @@
     ],
     "template": "ign-geoportal-basic"
 }
-
