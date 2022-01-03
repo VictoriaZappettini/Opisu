@@ -96,10 +96,10 @@
             "seccion": "Indec",
             "servicio": "wms",
             "version": "1.3.0",
-            "host": "https://geoservicios.indec.gob.ar/geoserver",
-            "allowed_layers": ["sig:v_departamentos","sig:vias","sig:cuadras","sig:v_fracciones",
-            "geocenso2010:actividad_dpto","geocenso2010:hogares_con_desague_cloacal_pcia","geocenso2010:hogares_con_desague_cloacal_dpto",
-            "geocenso2010:v_inmat_x_prov"]
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["PBA_calidad_conexion_servicios_2010","PBA_calidad_constructiva_2010","PBA_condicion_actividad_economica_2010","PBA_estratos_socioeconomicos_2010",
+            "PBA_hacinamiento_critico_2010","PBA_hogares_con_agua_red_2010","PBA_hogares_desague_cloacal_2010",
+            "PBA_hogares_gas_red_2010","PBA_inmat_2010","PBA_nbi_2010","PBA_nivel_de_instruccion_jefes_2010","PBA_poblacion_y_datos_basicos_2010","radios_barrios_opisu_2010"]
         },
         {
             "type": "wmslayer",
