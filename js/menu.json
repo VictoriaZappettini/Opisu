@@ -68,6 +68,7 @@
             "type": "wmslayer",
             "peso": 10,
             "nombre": "Zonificación - Ley 8912",
+            "short_abstract": "Zonificación y usos del suelo según Decreto-Ley 8912/77",
             "class": "",
             "seccion": "UrbaSig",
             "servicio": "wms",
