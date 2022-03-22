@@ -73,7 +73,7 @@
             "servicio": "wms",
             "version": "1.3.0",
             "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
-            "allowed_layers": ["MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2021","MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021",
+            "allowed_layers": ["MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2","MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021",
                               "MZA_Biocca_San_Jose_Hogares_INMAT_3y4_2021","MZA_Biocca_San_Jose_Poblacion_2021","MZA_Biocca_San_Jose_Poblacion_Desocupada_2021"],
             "customize_layers":{"MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2021":{"new_title": "Biocca y San José - Hogares con calidad constructiva insuficiente (2021)"},
                                 "MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021": {"new_title": "Biocca y San José - Hogares con hacinamiento crítico (2021)"},
