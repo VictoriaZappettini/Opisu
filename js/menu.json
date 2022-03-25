@@ -75,13 +75,15 @@
             "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
             "allowed_layers": ["MZA_Biocca_San_Jose_Poblacion_Hogares_Viviendas_2021""MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2","MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021",
                               "MZA_Biocca_San_Jose_Hogares_INMAT_3y4_2021","MZA_Biocca_San_Jose_Poblacion_Desocupada_2021","MZA_Biocca_San_Jose_Procedencia_Agua_2021",
-                              "MZA_Biocca_San_Jose_Jefxs_Secundario_Incompleto_2021","MZA_Biocca_San_Jose_Tenencia_2021"],
+                              "MZA_Biocca_San_Jose_Jefxs_Secundario_Incompleto_2021","MZA_Biocca_San_Jose_Tenencia_2021","MZA_Biocca_San_Jose_Hogares_1_Indicador_NBI_2021",
+                              "MZA_Biocca_San_Jose_Cloacas_2021"],
             "customize_layers":{ "MZA_Biocca_San_Jose_Poblacion_Hogares_Viviendas_2021":{"new_title": "Biocca y San José - Población, Hogares y Viviendas (2021)"},"MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2":{"new_title": "Biocca y San José - Hogares con calidad constructiva insuficiente (2021)"},
                                 "MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021": {"new_title": "Biocca y San José - Hogares con hacinamiento crítico (2021)"},
                                "MZA_Biocca_San_Jose_Hogares_INMAT_3y4_2021":{"new_title": "Biocca y San José - Hogares con calidad de los materiales INMAT 3 y 4 (2021)"},
-                                "MZA_Biocca_San_Jose_Cloacas_2021":{"new_title":"Biocca y San José - Hogares con al menos 1 indicador NBI (2021)"},
+                                "MZA_Biocca_San_Jose_Cloacas_2021":{"new_title":"Biocca y San José - Hogares con Red Pública de Cloaca (2021)"},
                                 "MZA_Biocca_San_Jose_Poblacion_Desocupada_2021":{"new_title": "Biocca y San José - Población desocupada (2021)"},
-                                 "MZA_Biocca_San_Jose_Tenencia_2021":{"new_title": "Biocca y San José - Hogares ni propietarios ni inquilinos (2021)"}, 
+                                 "MZA_Biocca_San_Jose_Tenencia_2021":{"new_title": "Biocca y San José - Hogares ni propietarios ni inquilinos (2021)"},
+                                "MZA_Biocca_San_Jose_Hogares_1_Indicador_NBI_2021":{"new_title": "Biocca y San José - Hogares con al menos 1 indicador NBI (2021)"},
                                  "MZA_Biocca_San_Jose_Procedencia_Agua_2021":{"new_title": "Biocca y San José - Cantidad de Hogares según procedencia del agua (2021)"},
                                 "MZA_Biocca_San_Jose_Jefxs_Secundario_Incompleto_2021":{"new_title": "Biocca y San José - Cantidad de Hogares cuyx Jefx tiene hasta Secundario Incompleto (2021)"}
                                }
