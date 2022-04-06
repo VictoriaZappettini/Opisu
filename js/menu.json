@@ -53,11 +53,11 @@
             "servicio": "wms",
             "version": "1.3.0",
             "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
-            "allowed_layers": ["Precios_entorno_Itati_2020","Coordinaciones_Territoriales_OPISU","Barrios_Intervencion_2022","40 AMBA - Deficit Urbano Habitacional",
+            "allowed_layers": ["Precios_entorno_Itati_2020","Coordinaciones_Territoriales_OPISU","Barrios_Intervencion_OPISU_ABR_2022","40 AMBA - Deficit Urbano Habitacional",
                                 "Estimacion_Poblacional","Nisu"],
             "customize_layers": {"Precios_entorno_Itati_2020":{"new_title": "Relevamiento mercado inmobiliario Itatí ","new_abstract": "Capa de generacion propia."},
                                  "Coordinaciones_Territoriales_OPISU":{"new_title": "Coordinaciones Territoriales OPISU","new_abstract": "Capa de generacion propia."},
-                                 "Barrios_Intervencion_2022":{"new_title": "Barrios Intervencion OPISU 2022","new_abstract": "Capa de generacion propia."},
+                                 "Barrios_Intervencion_OPISU_ABR_2022":{"new_title": "Barrios Intervencion ABRIL OPISU 2022","new_abstract": "Capa de generacion propia."},
                                  "40 AMBA - Deficit Urbano Habitacional":{"new_title": "Deficit Urbano Habitacional","new_abstract": "Capa de generacion propia."},
                                  "Estimacion_Poblacional":{"new_title": "Estimacion_Poblacional","new_abstract": "Capa de generacion propia."},
                                  "Nisu":{"new_title": "NISU","new_abstract": "Capa de generacion propia."}
