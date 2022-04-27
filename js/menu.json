@@ -99,8 +99,8 @@
             "servicio": "wms",
             "version": "1.3.0",
             "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
-            "allowed_layers": ["Zonas_Partidos_OPISU_urBAsig_ID","Usos_Partidos_OPISU_urBAsig_ID"],
-            "customize_layers":{"Usos_Partidos_OPISU_urBAsig_ID":{"new_title": "Usos del suelo 8912/77"},"Zonas_Partidos_OPISU_urBAsig_ID": {"new_title": "Zonificación 8912/77"}}
+            "allowed_layers": ["zonas_partidos_urbasig_etapa_2","usos_partidos_urbasig_etapa_2"],
+            "customize_layers":{"usos_partidos_urbasig_etapa_2":{"new_title": "Usos del suelo 8912/77"},"zonas_partidos_urbasig_etapa_2": {"new_title": "Zonificación 8912/77"}}
             
         },
          {
