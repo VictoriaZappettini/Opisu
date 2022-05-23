@@ -1,0 +1,87 @@
+{
+  "table": {
+    "isActive": true,
+    "rowsLimit": 5
+  },
+  "charts": {
+    "isActive": true
+  },
+  "layer_options":{
+    "isActive": false
+  },
+  "metaTags": {
+    "title": "",
+    "description": "",
+    "image": ""
+  },
+  "analytics_ids": [],
+  "excluded_plugins": ["minimap"],
+  "mapConfig": {
+    "center": {
+      "latitude": -40,
+      "longitude": -59
+    },
+    "zoom": {
+      "initial": 4,
+      "min": 3,
+      "max": 21
+    }
+  },
+  "service":{
+    "wmts": {
+      "maxZoom": 21
+    }
+  },
+  "showSearchBar": false,
+  "searchbar":{
+    "isActive": true,
+    "top": "20px",
+    "left": "30%",
+    "color_focus": "#008dc9",
+    "background_color": "rgba(255, 255, 255, 0.7)"
+  },
+  "geocoder":{
+    "url": "https://api.ign.gob.ar/buscador/",
+    "search": "search",
+    "url_by_id": "places",
+    "query": "q",
+    "lang": "es",
+    "limit":5,
+    "key": ""
+  }, 
+  "referencias": {
+    "show": false,
+    "src": "src/config/default/styles/images/referencias.png",
+    "width":"25px",
+    "height":"31px"
+  },
+  "theme": {
+    "bodyBackground": "#00aec3ff",
+    "headerBackground": "#00aec3ff",
+    "menuBackground": "#00aec3ff",
+    "activeLayer": "#33b560",
+    "textMenu":"white",
+    "textMenuStyle":"text-shadow: #103847 1px 1px 15px",
+    "textLegendMenu":"#dddddd",
+    "textLegendMenuStyle":"text-shadow: #103847 1px 1px 15px",
+    "iconBar":"#4f4f4f"
+    },
+  "logo": {
+    "show": false,
+    "title":"Instituto Geográfico Nacional",
+    "src": "",
+    "height": "270px",
+    "width": "270px",
+
+    "top": "5px",
+    "style": "",
+    "srcLogoMini": "",
+    "miniHeight": "250px",
+    "miniWidth": "250px",
+    "left": "30%",
+    "ministyle": ";"
+  },
+  "title": "OPISU",
+  "website": "https://www.gba.gob.ar/opisu",
+  "favicon": "src/config/default/styles/images/favi.png"
+}

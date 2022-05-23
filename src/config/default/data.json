@@ -1,0 +1,277 @@
+{
+  "items": [
+    {
+      "type": "basemap",
+      "peso": 1,
+      "nombre": "Mapas base",
+      "short_abstract": "",
+      "class": "",
+      "seccion": "mapasbase",
+      "capas": [
+         {
+          "titulo": "Argenmap gris",
+          "nombre": "argenmap_gris",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "<a href='https://www.ign.gob.ar/AreaServicios/Argenmap/IntroduccionV2' target='_blank'>Instituto Geográfico Nacional</a> + <a href='https://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+          "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{z}/{x}/{-y}.png",
+          "legendImg": "src/styles/images/argenmap-gris.png",
+          "peso": 20,
+          "selected": true,
+          "zoom": {
+            "min": 3,
+            "max": 21,
+            "nativeMin": 3,
+            "nativeMax": 21
+          }
+       },
+        {
+          "titulo": "Argenmap",
+          "nombre": "argenmap",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "<a href='https://www.ign.gob.ar/AreaServicios/Argenmap/IntroduccionV2' target='_blank'>Instituto Geográfico Nacional</a> + <a href='https://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+          "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
+          "legendImg": "src/styles/images/argenmap.png",
+          "peso": 10,
+          "zoom": {
+            "min": 3,
+            "max": 21,
+            "nativeMin": 3,
+            "nativeMax": 21
+          }
+        },
+        {
+          "titulo": "Imágenes satelitales Esri",
+          "nombre": "esri_imagery",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Imágenes satelitales © Esri",
+          "host": "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+          "legendImg": "src/styles/images/esri.png",
+          "peso": 30,
+          "zoom": {
+            "min": 3,
+            "max": 17,
+            "nativeMin": 3,
+            "nativeMax": 17
+          }
+        },
+        {
+          "titulo": "Mapa topográfico Esri",
+          "nombre": "esri_imagery_t",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Mapa topográfico © Esri",
+          "host": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}",
+          "legendImg": "src/styles/images/esrit.png",
+          "peso": 40,
+          "zoom": {
+            "min": 3,
+            "max": 8,
+            "nativeMin": 3,
+            "nativeMax": 8
+          }
+        },
+        {
+          "titulo": "Imágenes satelitales Here",
+          "nombre": "here_imagery",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Imágenes satelitales © here",
+          "host": "https://2.aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/256/png8?app_id=XiMlA4JwMurUFFYUWYe3&app_code=oTsmqovbl2YudG3E0UlxDA",
+          "legendImg": "src/styles/images/here.png",
+          "peso": 50,
+          "zoom": {
+            "min": 3,
+            "max": 20,
+            "nativeMin": 3,
+            "nativeMax": 20
+          }
+        }
+      ]
+    },
+     {
+            "type": "wmslayer",
+            "peso": 10,
+            "nombre": "Capas Opisu",
+            "short_abstract": "Organismo Provincial de Integración Social Y Urbana",
+            "class": "",
+            "seccion": "Opisu",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["Precios_entorno_Itati_2020","Coordinaciones_Territoriales_OPISU","Barrios_Intervencion_OPISU_ABR_2022","40 AMBA - Deficit Urbano Habitacional",
+                                "Estimacion_Poblacional","Nisu"],
+            "customize_layers": {"Precios_entorno_Itati_2020":{"new_title": "Relevamiento mercado inmobiliario Itatí ","new_abstract": "Capa de generacion propia."},
+                                 "Coordinaciones_Territoriales_OPISU":{"new_title": "Coordinaciones Territoriales OPISU","new_abstract": "Capa de generacion propia."},
+                                 "Barrios_Intervencion_OPISU_ABR_2022":{"new_title": "Barrios Intervencion ABRIL OPISU 2022","new_abstract": "Capa de generacion propia."},
+                                 "40 AMBA - Deficit Urbano Habitacional":{"new_title": "Deficit Urbano Habitacional","new_abstract": "Capa de generacion propia."},
+                                 "Estimacion_Poblacional":{"new_title": "Estimacion_Poblacional","new_abstract": "Capa de generacion propia."},
+                                 "Nisu":{"new_title": "NISU","new_abstract": "Capa de generacion propia."}
+            }
+        },
+         {
+            "type": "wmslayer",
+            "peso": 10,
+            "nombre": "Censo en Barrios Populares de la Provincia de Buenos Aires",
+            "short_abstract": "Censo OPISU-DPE en San Vicente. Agosto 2021",
+            "class": "",
+            "seccion": "OpisuCenso",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["MZA_Biocca_San_Jose_Poblacion_Hogares_Viviendas_2021","MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2","MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021",
+                              "MZA_Biocca_San_Jose_Hogares_INMAT_3y4_2021","MZA_Biocca_San_Jose_Poblacion_Desocupada_2021","MZA_Biocca_San_Jose_Procedencia_Agua_2021",
+                              "MZA_Biocca_San_Jose_Jefxs_Secundario_Incompleto_2021","MZA_Biocca_San_Jose_Tenencia_2021","MZA_Biocca_San_Jose_Hogares_1_Indicador_NBI_2021",
+                              "MZA_Biocca_San_Jose_Cloacas_2021"],
+            "customize_layers":{ "MZA_Biocca_San_Jose_Poblacion_Hogares_Viviendas_2021":{"new_title": "Biocca y San José - Población, Hogares y Viviendas (2021)"},"MZA_Biocca_San_Jose_Hogares_Calidad_Constructiva_Insuficiente_2":{"new_title": "Biocca y San José - Hogares con calidad constructiva insuficiente (2021)"},
+                                "MZA_Biocca_San_Jose_Hogares_Hacinamiento_Critico_2021": {"new_title": "Biocca y San José - Hogares con hacinamiento crítico (2021)"},
+                               "MZA_Biocca_San_Jose_Hogares_INMAT_3y4_2021":{"new_title": "Biocca y San José - Hogares con calidad de los materiales INMAT 3 y 4 (2021)"},
+                                "MZA_Biocca_San_Jose_Cloacas_2021":{"new_title":"Biocca y San José - Hogares con Red Pública de Cloaca (2021)"},
+                                "MZA_Biocca_San_Jose_Poblacion_Desocupada_2021":{"new_title": "Biocca y San José - Población desocupada (2021)"},
+                                 "MZA_Biocca_San_Jose_Tenencia_2021":{"new_title": "Biocca y San José - Hogares ni propietarios ni inquilinos (2021)"},
+                                "MZA_Biocca_San_Jose_Hogares_1_Indicador_NBI_2021":{"new_title": "Biocca y San José - Hogares con al menos 1 indicador NBI (2021)"},
+                                 "MZA_Biocca_San_Jose_Procedencia_Agua_2021":{"new_title": "Biocca y San José - Cantidad de Hogares según procedencia del agua (2021)"},
+                                "MZA_Biocca_San_Jose_Jefxs_Secundario_Incompleto_2021":{"new_title": "Biocca y San José - Cantidad de Hogares cuyx Jefx tiene hasta Secundario Incompleto (2021)"}
+                               }
+            
+        },
+         {
+            "type": "wmslayer",
+            "peso": 10,
+            "nombre": "Zonificación - Ley 8912",
+            "short_abstract": "Zonificación y usos del suelo según Decreto-Ley 8912/77",
+            "class": "",
+            "seccion": "UrbaSig",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["zonas_partidos_urbasig_etapa_2","usos_partidos_urbasig_etapa_2"],
+            "customize_layers":{"usos_partidos_urbasig_etapa_2":{"new_title": "Usos del suelo 8912/77"},"zonas_partidos_urbasig_etapa_2": {"new_title": "Zonificación 8912/77"}}
+            
+        },
+         {
+            "type": "wmslayer",
+            "peso": 40,
+            "nombre": "IGN",
+            "short_abstract": " Instituto Geográfico Nacional ",
+            "class": "",
+            "seccion": "ign",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://wms.ign.gob.ar/geoserver/ign",
+            "allowed_layers":["area_protegida","lineas_de_aguas_continentales_BH020","areas_de_equipamiento_AL030","puntos_de_energia_AD010","lineas_de_aguas_continentales_intermitentes","lineas_de_aguas_continentales_perenne","estructuras_operativas_y_defensivas_090102","curva_de_nivel","departamento","puntos_de_asentamientos_y_edificios_020102","cultura_y_religion_AL021","salud_020801","estructuras_operativas_y_defensivas_FA517","puntos_de_asentamientos_y_edificios_020101","cultura_y_religion_AL330","areas_de_equipamiento_AL170","areas_de_aguas_continentales_perenne","puntos_de_ciencia_y_educacion_02060","puntos_de_transporte_ferroviario_AN070",
+            "infraestructura_de_transporte_AQ125","puntos_de_fabricacion_y_procesamiento_AC000","lineas_de_transporte_ferroviario_AN010","areas_de_aguas_continentales_BH090","instalacion_militar_SU001","estructuras_operativas_y_defensivas_090101",
+            "puntos_de_recreacion_AK040","areas_de_actividad_agropecuaria_AJ110","localidad_bahra","mde","municipio","areas_de_fabricacion_y_procesamiento_AC507",
+            "areas_de_gestion_de_residuos_AB030","areas_de_fabricacion_y_procesamiento_BH220","puntos_de_ciencia_y_educacion_020602","sublocalidad_entidad_bahra","areas_de_gestion_de_residuos_relleno_sanitario","vial_provincial"
+            ]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 60,
+            "nombre": "Información Censal",
+            "short_abstract": "Instituto Nacional de Estadística y Censos",
+            "class": "",
+            "seccion": "Indec",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["PBA_calidad_conexion_servicios_2010","PBA_calidad_constructiva_2010","PBA_condicion_actividad_economica_2010","PBA_estratos_socioeconomicos_2010",
+            "PBA_hacinamiento_critico_2010","PBA_hogares_con_agua_red_2010","PBA_hogares_desague_cloacal_2010",
+            "PBA_hogares_gas_red_2010","PBA_inmat_2010","PBA_nbi_2010","PBA_nivel_de_instruccion_jefes_2010","PBA_poblacion_y_datos_basicos_2010","radios_barrios_opisu_2010"],
+           "customize_layers": {"PBA_calidad_conexion_servicios_2010":{"new_title": "Calidad de Conexión a Servicios en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_calidad_constructiva_2010":{"new_title": "Calidad Constructiva de las Viviendas en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_condicion_actividad_economica_2010":{"new_title": "Condición de Actividad Económica de las Personas en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_estratos_socioeconomicos_2010":{"new_title": "Estratos Socioeconómicos en la PBA por Radio Censal (De Grande, P. y Salvia, A. 2019 en base a INDEC 2010) "},
+            "PBA_hacinamiento_critico_2010":{"new_title": "Hacinamiento Crítico de los Hogares en la PBA por Radio Censal (INDEC, 2010) "},                    
+            "PBA_hogares_con_agua_red_2010":{"new_title": "Hogares con Agua de Red en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_hogares_desague_cloacal_2010":{"new_title": "Hogares con Desagüe Cloacal en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_hogares_gas_red_2010":{"new_title": "Hogares con Gas de Red en la PBA por Radio Censal (INDEC, 2010)"},
+            "PBA_inmat_2010":{"new_title": "Calidad de los Materiales INMAT en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_nbi_2010":{"new_title": "Personas y Hogares con Necesidades Básicas Insatisfechas (NBI) en la PBA por Radio Censal (INDEC, 2010)"},
+            "PBA_nivel_de_instruccion_jefes_2010":{"new_title": "Nivel de Instrucción de Jefes/as en la PBA por Radio Censal (INDEC, 2010) "},
+            "PBA_poblacion_y_datos_basicos_2010":{"new_title": "Datos Básicos en la PBA por Radio Censal (INDEC, 2010)"},
+            "radios_barrios_opisu_2010":{"new_title": "Código de Radio Censal para los Barrios de Intervención OPISU (INDEC, 2010) "}
+            }
+        },
+        {
+            "type": "wmslayer",
+            "peso": 30,
+            "nombre": "ARBA",
+            "short_abstract": "Catastro provincial",
+            "class": "",
+            "seccion": "Arba",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geo.arba.gov.ar/geoserver/idera",
+            "allowed_layers": ["Grupo IDERA"]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 50,
+            "nombre": "RENABAP 2022 Prov.BsAs",
+            "short_abstract": "Registro Nacional de Barrios Populares",
+            "class": "",
+            "seccion": "renabap",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["RENABAP_Buenos_Aires_2022"],
+            "customize_layers":{"RENABAP_Buenos_Aires_2022":{"new_title": "Barrios Populares de la PBA inscritos en el RENABAP (2022)"}}
+        },
+        {
+            "type": "wmslayer",
+            "peso": 70,
+            "nombre": "Infraestructura Básica",
+            "short_abstract": "Capas de servicios básicos e infraestructura de fuentes secundarias",
+            "class": "",
+            "seccion": "infrabasica",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
+            "allowed_layers": ["cursos_de_agua","curvas_de_nivel_PBA","dist_at_mt","cuerpos_de_agua","lineas_alta_tension","lotes_con_servicios","edenor_subestacion_at","edenor_linea_at",
+            "edenor_subestacion_mt","edelap_linea_at","edelap_subestacion_at","edelap_subestacion_mt","paradas_colectivo_RMBA","recorridos_lineas_provinciales",
+            "red_agua_absa","red_cloaca_absa","red_de_agua","red_de_cloacas","red_de_gas"," terminales_y_paradores","rutas_nacionales","rutas_provinciales",
+            "prestadores_servicio_agua_cloacas","red_vial_secundaria","centrales_elec","cuencas_hidricas"],
+          "customize_layers": {"centrales_elec":{"new_title": "Centrales Eléctricas"},
+            "cuencas_hidricas":{"new_title": "Cuencas Hídricas "},
+            "cuerpos_de_agua":{"new_title": "Cuerpos de Agua"},
+            "cursos_de_agua":{"new_title": "Cursos de Agua "},
+            "curvas_de_nivel_PBA":{"new_title": "Curvas de Nivel en la PBA "},                    
+            "dist_at_mt":{"new_title": "Distribución de líneas de Alta Tensión y de Media Tensión "},
+            "edelap_linea_at":{"new_title": "Líneas de Alta Tensión (EDELAP)"},
+            "edelap_subestacion_at":{"new_title": "Subestaciones de Alta Tensión (EDELAP)"},
+            "edelap_subestacion_mt":{"new_title": "Subestaciones de Media Tensión (EDELAP)"},
+            "edenor_linea_at":{"new_title": "Líneas de Alta Tensión (EDENOR)"},
+            "edenor_subestacion_at":{"new_title": "Subestaciones de Alta Tensión (EDENOR)"},
+            "edenor_subestacion_mt":{"new_title": "Subestaciones de Media Tensión (EDENOR) "},
+            "lineas_alta_tension":{"new_title":"Líneas de Alta Tensión en la PBA "},
+            "lotes_con_servicios":{"new_title":"Lotes con Servicios (Ley 14449) "},
+            "paradas_colectivo_RMBA":{"new_title":"Paradas de Colectivo en la RMBA "},
+            "prestadores_servicio_agua_cloacas":{"new_title":"Prestadores de Servicio de Agua y Cloacas "},
+            "recorridos_lineas_provinciales":{"new_title": "Recorrido de las líneas provinciales de colectivo"},
+            "red_agua_absa":{"new_title":"Red de Agua (ABSA) "},
+            "red_cloaca_absa":{"new_title":"Red de Cloaca (ABSA) "},
+            "red_de_agua":{"new_title":"Red de Agua"},
+            "red_de_cloacas":{"new_title":"Red de Cloaca "},
+            "red_vial_secundaria":{"new_title": "Red Vial Secundaria"},
+            "rutas_provinciales":{"new_title": "Rutas Provincial"},
+            "rutas_nacionaless":{"new_title": "Rutas Nacional"}
+        }
+        },
+         {
+            "type": "wmslayer",
+            "peso": 70,
+            "nombre": "Datos Socioeconómicos",
+            "short_abstract":"Capas sobre distintos indicadores",
+            "class": "",
+            "seccion": "datosse",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "",
+            "allowed_layers": []
+        }
+  ],
+  "template": "ign-geoportal-basic"
+}
