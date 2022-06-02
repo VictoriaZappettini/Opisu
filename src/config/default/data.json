@@ -260,25 +260,13 @@
             "rutas_nacionaless":{"new_title": "Rutas Nacional"}
         }
         },
-         {
-            "type": "wmslayer",
-            "peso": 70,
-            "nombre": "Datos Socioeconómicos",
-            "short_abstract":"Capas sobre distintos indicadores",
-            "class": "",
-            "seccion": "datosse",
-            "servicio": "wms",
-            "version": "1.3.0",
-            "host": "",
-            "allowed_layers": []
-        },
         {
             "type": "wmslayer",
             "peso": 70,
             "nombre": "Urbanizaciones Cerradas del AMBA",
             "short_abstract":"Relevamiento de UC y barrios privados",
             "class": "",
-            "seccion": "datosse",
+            "seccion": "urba",
             "servicio": "wms",
             "version": "1.3.0",
             "host": "",
