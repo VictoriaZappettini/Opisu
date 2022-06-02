@@ -269,7 +269,7 @@
             "seccion": "urba",
             "servicio": "wms",
             "version": "1.3.0",
-            "host": "",
+            "host": "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU",
             "allowed_layers": ["UC_RMBA_2022_OPISU_v1"],
             "customize_layers":{"UC_RMBA_2022_OPISU_v1":{"new_title": "Urbanizaciones Cerradas del AMBA - Relevamiento OPISU 2022"}}
         }
