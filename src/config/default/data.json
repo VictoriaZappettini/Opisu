@@ -108,9 +108,8 @@
                                  "barrios_intervencion_opisu_jun_2022":{"new_title": "Barrios Intervencion OPISU JUNIO 2022","new_abstract": "Capa de generacion propia."},
                                  "40 AMBA - Deficit Urbano Habitacional":{"new_title": "Deficit Urbano Habitacional","new_abstract": "Capa de generacion propia."},
                                  "Estimacion_Poblacional":{"new_title": "Estimacion_Poblacional","new_abstract": "Capa de generacion propia."},
-                                 "Nisu":{"new_title": "NISU","new_abstract": "Capa de generacion propia.", "barrios_evaluacion_opisu_jun_2022" :{"new_title": "Barrios Intervencion OPISU JUNIO 2022","new_abstract": "Capa de generacion propia."}}
-            }
-        },
+                                 "Nisu":{"new_title": "NISU","new_abstract": "Capa de generacion propia."},"barrios_evaluacion_opisu_jun_2022":{"new_title": "Barrios en Evaluacion OPISU JUNIO 2022","new_abstract": "Capa de generacion propia."}}
+                    },
          {
             "type": "wmslayer",
             "peso": 10,
